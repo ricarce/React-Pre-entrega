@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "nombre": "Dulce de leche",
+    "categoria": "Productos regionales",
+    "precio": 4500,
+    "imagen": "/img/dulce-de-leche.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Miel artesanal",
+    "categoria": "Productos regionales",
+    "precio": 5500,
+    "imagen": "/img/miel.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Quesos artesanales",
+    "categoria": "Productos regionales",
+    "precio": 15500,
+    "imagen": "/img/quesos.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Salame artesanal",
+    "categoria": "Productos regionales",
+    "precio": 15900,
+    "imagen": "/img/salame.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Cabalgata guiada",
+    "categoria": "Experiencias",
+    "precio": 10000,
+    "imagen": "/img/cabalgata.jpg"
+  }
+]

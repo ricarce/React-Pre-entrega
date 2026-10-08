@@ -1,0 +1,33 @@
+.site-nav {
+  background-color: #2f4634;
+  padding: 15px 20px;
+}
+
+.nav-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.site-nav li {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.site-nav li:hover {
+  color: #e6d5b8;
+}

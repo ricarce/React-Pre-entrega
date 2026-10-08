@@ -1,0 +1,10 @@
+.items-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+  width: 90% !important;
+  margin: 30px auto !important;
+}
+.productos-section h2 {
+  text-align: center;
+}
