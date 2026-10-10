@@ -4,34 +4,34 @@
     "nombre": "Dulce de leche",
     "categoria": "Productos regionales",
     "precio": 4500,
-    "imagen": "/img/dulce-de-leche.jpg"
+    "imagen": "https://i.ibb.co/LbG4z8m/karolina-kolodziejczak-omui-EW5-BLc-E-unsplash.jpg"
   },
   {
     "id": 2,
     "nombre": "Miel artesanal",
     "categoria": "Productos regionales",
     "precio": 5500,
-    "imagen": "/img/miel.jpg"
+    "imagen": "https://i.ibb.co/MydcG5CN/art-rachen-Asj5-DFw8-UAw-unsplash.jpg"
   },
   {
     "id": 3,
     "nombre": "Quesos artesanales",
     "categoria": "Productos regionales",
     "precio": 15500,
-    "imagen": "/img/quesos.jpg"
+    "imagen": "https://i.ibb.co/C3CS8Wgx/azzedine-rouichi-YW-5r-Jv-Ad-Kw-unsplash.jpg"
   },
   {
     "id": 4,
     "nombre": "Salame artesanal",
     "categoria": "Productos regionales",
     "precio": 15900,
-    "imagen": "/img/salame.jpg"
+    "imagen": "https://i.ibb.co/d4xBWktn/wesual-click-m-N0-Q-lwx-Z0-unsplash.jpg"
   },
   {
     "id": 5,
     "nombre": "Cabalgata guiada",
     "categoria": "Experiencias",
     "precio": 10000,
-    "imagen": "/img/cabalgata.jpg"
+    "imagen": "https://i.ibb.co/dsjgmfPG/lovro-pavlicic-oy-X0-XPZDSxg-unsplash.jpg"
   }
 ]
