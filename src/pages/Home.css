@@ -1,0 +1,323 @@
+
+.home {
+  color: #333;
+  background-color: #fff;
+}
+
+/* PORTADA */
+
+.home-hero {
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 70px 8%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15, 30, 20, 0.78),
+      rgba(15, 30, 20, 0.25)
+    ),
+    url('/casa1/casa1.jpg');
+
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero-contenido {
+  max-width: 700px;
+  color: white;
+}
+
+.home-etiqueta {
+  display: inline-block;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.home-hero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.08;
+  color: white;
+}
+
+.home-hero h1 span {
+  display: block;
+  color: #d6c59a;
+}
+
+.home-hero p {
+  max-width: 560px;
+  margin: 25px 0;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.home-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.25s ease;
+}
+
+.home-btn-principal {
+  background-color: #718b65;
+  color: white;
+}
+
+.home-btn-principal:hover {
+  background-color: #526c49;
+}
+
+.home-btn-secundario {
+  border: 1px solid white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.home-btn-secundario:hover {
+  background-color: white;
+  color: #333;
+}
+
+/* PRESENTACIÓN */
+
+.home-presentacion {
+  max-width: 850px;
+  margin: auto;
+  padding: 85px 25px;
+  text-align: center;
+}
+
+.home-subtitulo {
+  color: #718b65;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.home-presentacion h2,
+.home-seccion-titulo h2 {
+  margin: 15px 0;
+  color: #40543e;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.home-presentacion p {
+  color: #666;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+/* TÍTULOS DE SECCIÓN */
+
+.home-seccion-titulo {
+  max-width: 750px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.home-seccion-titulo p {
+  color: #777;
+  line-height: 1.7;
+}
+
+/* COMODIDADES */
+
+.home-comodidades {
+  padding: 80px 7%;
+  background-color: #f5f5ef;
+}
+
+.home-comodidades-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home-comodidad-card {
+  padding: 30px 20px;
+  border-radius: 12px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+.home-comodidad-icono {
+  font-size: 2.5rem;
+}
+
+.home-comodidad-card h3 {
+  color: #40543e;
+  margin: 18px 0 10px;
+}
+
+.home-comodidad-card p {
+  color: #777;
+  line-height: 1.6;
+}
+
+/* CABAÑAS */
+
+.home-cabanas {
+  padding: 85px 7%;
+  text-align: center;
+}
+
+.home-cabanas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1050px;
+  margin: auto auto 35px;
+}
+
+.home-cabana-card {
+  overflow: hidden;
+  border-radius: 13px;
+  background-color: #f8f7f2;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+}
+
+.home-cabana-card img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.home-cabana-card:hover img {
+  transform: scale(1.04);
+}
+
+.home-cabana-info {
+  padding: 22px;
+}
+
+.home-cabana-info h3 {
+  margin-top: 0;
+  color: #40543e;
+  font-size: 1.5rem;
+}
+
+.home-cabana-info p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.home-cabana-info span {
+  color: #718b65;
+  font-weight: bold;
+}
+
+.home-btn-vermas {
+  background-color: #526c49;
+  color: white;
+}
+
+.home-btn-vermas:hover {
+  background-color: #40543e;
+}
+
+/* RESERVA */
+
+.home-reserva {
+  padding: 80px 25px;
+  background-color: #40543e;
+  color: white;
+  text-align: center;
+}
+
+.home-reserva h2 {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.home-reserva p {
+  max-width: 650px;
+  margin: 20px auto 30px;
+  line-height: 1.8;
+  color: #e5e9e1;
+}
+
+.home-btn-reserva {
+  background-color: #d6c59a;
+  color: #333;
+}
+
+.home-btn-reserva:hover {
+  background-color: #eee1bd;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .home-comodidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-hero {
+    min-height: 500px;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .home-hero {
+    min-height: 530px;
+    padding: 55px 7%;
+    background-position: center;
+  }
+
+  .home-hero p {
+    font-size: 1rem;
+  }
+
+  .home-botones {
+    flex-direction: column;
+  }
+
+  .home-botones .home-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home-presentacion {
+    padding: 60px 22px;
+  }
+
+  .home-comodidades,
+  .home-cabanas {
+    padding: 60px 6%;
+  }
+
+  .home-comodidades-grid,
+  .home-cabanas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-cabana-card img {
+    height: 230px;
+  }
+
+  .home-reserva {
+    padding: 60px 22px;
+  }
+}

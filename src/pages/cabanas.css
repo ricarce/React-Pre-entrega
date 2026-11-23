@@ -1,0 +1,140 @@
+
+.pagina-cabanas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.cabanas-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cabanas-intro h1 {
+  color: #315b3b;
+  margin-bottom: 12px;
+}
+
+.cabanas-intro p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #59645a;
+}
+
+.casa-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+}
+
+.casa-card h2 {
+  color: #315b3b;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.galeria-cabana {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.galeria-imagen {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #e8e8e8;
+}
+
+.galeria-imagen img {
+  width: 100%;
+  height: clamp(250px, 45vw, 480px);
+  object-fit: cover;
+  display: block;
+}
+
+.galeria-imagen button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #315b3b;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.galeria-imagen button:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.galeria-imagen button:first-of-type {
+  left: 15px;
+}
+
+.galeria-imagen button:last-of-type {
+  right: 15px;
+}
+
+.galeria-cabana p {
+  color: #687268;
+  font-size: 14px;
+  margin: 10px 0 25px;
+}
+
+.casa-card h3 {
+  color: #315b3b;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.casa-card ul {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.casa-card li {
+  background: #f1f5ef;
+  border-radius: 8px;
+  padding: 12px;
+  color: #354638;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .pagina-cabanas {
+    padding: 20px 12px;
+  }
+
+  .casa-card {
+    padding: 16px 12px;
+    margin-bottom: 25px;
+  }
+
+  .galeria-imagen img {
+    height: 260px;
+  }
+
+  .galeria-imagen button {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+  }
+
+  .casa-card ul {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,321 @@
+
+/* CONTENEDOR GENERAL */
+.formulario-reserva {
+  width: 100%;
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.10);
+  box-sizing: border-box;
+}
+
+.formulario-reserva h2,
+.formulario-reserva h3 {
+  color: #294b38;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CALENDARIO */
+.calendario-reserva {
+  padding: 20px;
+  background: #f7f9f7;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.calendario-navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendario-navegacion button {
+  border: none;
+  background: #315d43;
+  color: white;
+  padding: 9px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.calendario-navegacion button:hover {
+  background: #234530;
+}
+
+.calendario-navegacion h3 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.calendario-dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 7px;
+}
+
+.calendario-dia-semana {
+  text-align: center;
+  font-weight: bold;
+  color: #52665a;
+  padding: 8px 0;
+  font-size: 13px;
+}
+
+.calendario-vacio {
+  min-height: 42px;
+}
+
+.calendario-dia {
+  min-height: 42px;
+  border: 1px solid #dce5dd;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #294b38;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.calendario-dia:hover:not(:disabled) {
+  background: #e2eee5;
+  border-color: #315d43;
+}
+
+.calendario-dia:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.calendario-dia.ocupado {
+  background: #f7dada;
+  color: #a12626;
+  border-color: #e9baba;
+  text-decoration: line-through;
+}
+
+.calendario-dia.pasado {
+  background: #eeeeee;
+  color: #999999;
+}
+
+.calendario-dia.seleccionado {
+  background: #315d43;
+  color: white;
+  border-color: #315d43;
+  font-weight: bold;
+}
+
+.calendario-dia.en-rango {
+  background: #dcebdd;
+  border-color: #a5c5a9;
+}
+
+/* REFERENCIAS DEL CALENDARIO */
+.calendario-referencias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.referencia {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #444;
+}
+
+.referencia::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.referencia.disponible::before {
+  background: white;
+  border: 1px solid #b8c8ba;
+}
+
+.referencia.ocupada::before {
+  background: #f0bcbc;
+}
+
+.referencia.seleccionada::before {
+  background: #315d43;
+}
+
+/* FORMULARIO */
+.formulario-reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formulario-reserva label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #294b38;
+  font-weight: 600;
+}
+
+.formulario-reserva input,
+.formulario-reserva select,
+.formulario-reserva textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd7ce;
+  border-radius: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.formulario-reserva input:focus,
+.formulario-reserva select:focus,
+.formulario-reserva textarea:focus {
+  outline: none;
+  border-color: #315d43;
+  box-shadow: 0 0 0 2px rgba(49, 93, 67, 0.12);
+}
+
+.formulario-reserva button[type="submit"] {
+  padding: 13px;
+  background: #315d43;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-reserva button[type="submit"]:hover {
+  background: #234530;
+}
+
+.formulario-reserva button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* MENSAJES */
+.formulario-reserva .mensaje {
+  padding: 12px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+  .formulario-reserva {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .calendario-reserva {
+    padding: 12px;
+  }
+
+  .calendario-dias {
+    gap: 4px;
+  }
+
+  .calendario-dia {
+    min-height: 37px;
+    font-size: 12px;
+    padding: 3px;
+  }
+
+  .calendario-dia-semana {
+    font-size: 11px;
+  }
+
+  .calendario-vacio {
+    min-height: 37px;
+  }
+
+  .calendario-referencias {
+    gap: 10px;
+  }
+
+  .referencia {
+    font-size: 11px;
+  }
+}
+
+/* RESUMEN DEL PRESUPUESTO */
+.resumen-reserva {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f2f7f2;
+  border: 1px solid #d5e3d6;
+  border-radius: 12px;
+}
+
+.resumen-reserva h4 {
+  color: #294b38;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.resumen-linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dce5dd;
+  color: #444;
+}
+
+.resumen-linea strong {
+  color: #294b38;
+  text-align: right;
+}
+
+.resumen-total {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.resumen-anticipo {
+  color: #237344;
+  font-weight: bold;
+}
+
+.resumen-anticipo strong {
+  color: #237344;
+  font-size: 19px;
+}
+
+.aclaracion-reserva {
+  margin: 16px 0 0;
+  color: #596b5e;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .resumen-reserva {
+    padding: 14px;
+  }
+
+  .resumen-linea {
+    font-size: 13px;
+  }
+
+  .resumen-anticipo strong {
+    font-size: 16px;
+  }
+}
